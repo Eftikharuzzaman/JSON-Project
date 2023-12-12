@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Project</title>
+
+    <!-- Google Fonts start -->
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Roboto', sans-serif; -->
+
+    <!-- sans-serif font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Open Sans', sans-serif; -->
+
+    <!-- Google Fonts End -->
+
+    <!-- DaisyUI Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Tailwind Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body>
+    <!-- Header Part Start -->
+    <header>
+        <!-- Navbar Start -->
+        <nav>
+            <div class="navbar bg-base-100 max-w-7xl mx-auto">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li>
+                            <a href="#" class="text-white text-xl font-[Roboto] font-medium hover:bg-[#0097e6]">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-xl font-[Roboto] font-medium hover:bg-[#0097e6]">Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-xl font-[Roboto] font-medium hover:bg-[#0097e6]">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-xl font-[Roboto] font-medium hover:bg-[#0097e6]">Best Phone</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-xl font-[Roboto] font-medium hover:bg-[#0097e6]">Contact</a>
+                        </li>
+                    </ul>
+                  </div>
+                  <a class="btn text-[#44bd32] text-3xl font-serif"><span class="text-[#e84118]">GADGET</span>BD</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li>
+                        <a href="#" class="text-white text-xl font-[Roboto] font-medium hover:bg-[#0097e6]">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white text-xl font-[Roboto] font-medium hover:bg-[#0097e6]">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white text-xl font-[Roboto] font-medium hover:bg-[#0097e6]">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white text-xl font-[Roboto] font-medium hover:bg-[#0097e6]">Best Phone</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white text-xl font-[Roboto] font-medium hover:bg-[#0097e6]">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn text-white bg-[#3742fa] font-[Roboto] hover:bg-[#0097e6]">Register Now</a>
+                </div>
+              </div>
+        </nav>
+        <!-- Navbar End -->
+        <!-- hero section Start -->
+        <div class="hero min-h-screen" style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-4xl font-bold text-white">Wellcome to <span class="text-7xl text-[#e84118]">GADGET</span> <span class="text-7xl text-[#44bd32]">BD</span></h1>
+                <p class="mb-5 text-white text-lg font-sans">Hello Sir. You can find the best phone, watch and Tab on this site. Don't forgot to visit Best Phone option. Make sure that you register. Thank You. </p>
+                <button class="btn btn-primary text-white text-sm font-bold font-serif">BUY NOW</button>
+              </div>
+            </div>
+          </div>
+        <!-- hero section End -->
+    </header>
+    <!-- Header Part End -->
+
+    <!-- Product Section Start -->
+    <main class="max-w-7xl mx-auto">
+        
+        <!-- Top Text Start -->
+        <div class="text-center my-20">
+            <h2 class="text-5xl text-white font-[Roboto] font-bold">Search Your Phone</h2>
+        </div>
+        <!-- Top Text End -->
+
+        <!-- Search Section Start -->
+        <div class="mb-10 flex justify-center items-center gap-2">
+            <input 
+            type="text"
+            class="input input-bordered border-slate-100 w-full max-w-lg text-white"
+            id="search-Field"
+            placeholder="Search....."
+            >
+            <button 
+            onclick="searchPhone()"
+            class="btn btn-primary text-white text-lg font-[Roboto]">
+            Search</button>
+        </div>
+        <!-- Search Section End -->
+
+        <!-- Phone Content Start -->
+        <section class="relative">
+            <div id="Phone-item" class="my-20 grid grid-cols-3 gap-6 sm:grid-cols-2 md:grid-cols-3 max-w-7xl mx-auto"></div>
+            <!-- loading Option Start -->
+            <div id="loading" class="absolute top-10 left-1/2 z-10 hidden">
+                <span class="loading loading-spinner loading-lg bg-white"></span>
+            </div>
+            <!-- loading Option End -->
+
+            <!-- ShowMore Items Section Start -->
+            <div id="showMoreButton" class="text-center hidden">
+                <button 
+                class="btn btn-outline btn-primary font-bold font-[Roboto]" 
+                onclick="showMore()"> 
+                Show More </button>
+            </div>
+            <!-- ShowMore Items Section End -->
+
+            <!-- Error Message start -->
+            <div class="my-5 z-10">
+                <h2 id="error" class="text-4xl text-center text-white font-[Roboto]">No item's Found</h2>
+            </div>
+            <!-- Error Message End -->
+
+        </section>
+        <!-- Phone Content End -->
+    </main>
+    <!-- Product Section End -->
+
+    <!-- JS Link -->
+    <script src="JS/main.js"></script>
+</body>
+</html>
